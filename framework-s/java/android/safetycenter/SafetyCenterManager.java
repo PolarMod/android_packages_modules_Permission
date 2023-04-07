@@ -318,13 +318,14 @@ public final class SafetyCenterManager {
      * <p>If this returns {@code false}, all the other methods in this class will no-op and/or
      * return default values.
      */
-    @RequiresPermission(anyOf = {READ_SAFETY_CENTER_STATUS, SEND_SAFETY_CENTER_UPDATE})
+    //@RequiresPermission(anyOf = {READ_SAFETY_CENTER_STATUS, SEND_SAFETY_CENTER_UPDATE})
     public boolean isSafetyCenterEnabled() {
-        try {
+        /*try {
             return mService.isSafetyCenterEnabled();
         } catch (RemoteException e) {
             throw e.rethrowFromSystemServer();
-        }
+        }*/
+	return false;
     }
 
     /**
